@@ -1,0 +1,30 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; 
+    padding: 20px;
+  }
+  .section-top{
+   display: flex; 
+   justify-content: center; 
+   padding: 20px 0;
+   }
+  .section-bottom{
+    background-color: rgba(57, 57, 57, 0.9);
+    text-align: center;
+    padding: 15px 0;
+  }
+  .col{
+    margin: 0 15px;
+    width: 25% /*optional*/
+  }
+  @media all and (max-width: 600px){ 
+  .section-top{
+      flex-direction: column;
+  }    
+  .col{
+    text-align: center;
+    width: 100%;
+    margin: 0
+  }
+}
