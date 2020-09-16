@@ -7,7 +7,7 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "build:ci": "ng build --prod --sourceMap=false --base-href /user-interface/",
+    "build:ci": "ng build --prod --sourceMap=false --base-href /speach-user-interface/",
     "e2e": "ng e2e"
   },
   "private": true,
