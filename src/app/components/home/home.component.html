@@ -1,10 +1,33 @@
-<mat-drawer-container class="mat-container">
-    <mat-drawer mode="side" class="mat-drawer-cls" opened>
-        <app-side-nav></app-side-nav>
-    </mat-drawer>
-    <mat-drawer-content fxLayout="column" class="mat-content">
-        <app-header-toolbar></app-header-toolbar>
-        <router-outlet class="home-content"></router-outlet>
-        <app-footer class="footer" fxFlexOffset="auto"></app-footer>
-    </mat-drawer-content>
-</mat-drawer-container>
+<div id="home-div" class="home-div hide-scroll-bar">
+    <div class="myfont-title"><span class="bold-txt">CH</span>atw<span class="bold-txt">I</span>th<span
+            class="bold-txt">P</span>a</div>
+    <mat-divider></mat-divider>
+    <div class="home-page">
+        <div class="myfont-title">Let your buddy do your boring job.</div>
+        <img class="info-sheet-img" src="assets/speaker-img.jpg" />
+        <div class="info-sheet">
+            <div class="details-sheet">
+                <span class="myfont-subtitle">Ask your assistant</span>
+                <span class="myfont-details">You can chat with your personal assistant. Keep in mind it replies on
+                    conversation history and your trained data.</span>
+                <button mat-button routerLink="/nlp">Start conversation</button>
+                <a mat-button href="/" target="_blank" color="primary">Learn more</a>
+            </div>
+            <div class="details-sheet">
+                <span class="myfont-subtitle">Start training your assistant</span>
+                <span class="myfont-details">An NLP engine personalized for all your needs, trained with your own
+                    data
+                    with security. Experience the best.</span>
+                <button mat-button>Train bot</button>
+                <a mat-button href="/" target="_blank" color="primary">Learn more</a>
+            </div>
+            <div class="details-sheet">
+                <span class="myfont-subtitle">Build a network</span>
+                <span class="myfont-details">You can connect your assistant with that of your friends to share the
+                    knowledge.</span>
+                <button mat-button>Add your friend</button>
+                <a mat-button href="/" target="_blank" color="primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>

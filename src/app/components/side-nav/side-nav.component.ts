@@ -1,6 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { CategoryService } from '../../services/category.service';
-import { Category } from '../../models/category';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-side-nav',
@@ -9,7 +7,7 @@ import { Category } from '../../models/category';
 })
 export class SideNavComponent implements OnInit {
 
-  constructor(private categoryService: CategoryService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }

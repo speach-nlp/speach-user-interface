@@ -1,0 +1,112 @@
+
+.myfont-title{
+    padding: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: normal;
+    color: rgba(50, 45, 45, 1);
+}
+
+.myfont-subtitle{
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  line-height: normal;
+  color: rgba(50, 45, 45, 1);
+}
+
+.myfont-details{
+  padding: 8px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  line-height: normal;
+  color: rgba(50, 45, 45, 1);
+  display: inline-block;
+}
+
+.myfont-chat{
+    font-family: "Roboto";
+    font-weight: 300;
+    line-height: normal;
+}
+
+  
+@media only screen and (max-width: 600px) {
+  .myfont-title{
+    font-size: 20px;
+  }
+  .myfont-subtitle{
+    font-size: 15px;
+  }
+  .myfont-details{
+    font-size: 12px;
+  }
+  .info-sheet-img{
+      width: 130px;
+      height: 110px;
+     }
+  .myfont-chat{
+    font-size: 20px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .myfont-title{
+    font-size: 22px;
+  }
+  .myfont-subtitle{
+    font-size: 17px;
+  }
+  .myfont-details{
+    font-size: 13px;
+  }
+  .myfont-chat{
+    font-size: 25px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .myfont-title{
+    font-size: 23px;
+  }
+  .myfont-subtitle{
+    font-size: 18px;
+  }
+  .myfont-details{
+    font-size: 14px;
+  }
+  .myfont-chat{
+    font-size: 20px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .myfont-title{
+    font-size: 27px;
+  }
+  .myfont-subtitle{
+    font-size: 20px;
+  }
+  .myfont-details{
+    font-size: 15px;
+  }
+  .myfont-chat{
+    font-size: 16px;
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .myfont-title{
+    font-size: 30px;
+  }
+  .myfont-subtitle{
+    font-size: 23px;
+  }
+  .myfont-details{
+    font-size: 17px;
+  }
+}

@@ -1,15 +1,16 @@
 import { Injectable } from '@angular/core';
-import { Note } from '../models/note';
-import { Data } from './data';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class NoteService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
-  getAllNotes(): Note[] {
-    return Data.NOTES;
+  getRandomQuote(): Observable<any> {
+    const url = 'https://quotes.rest/qod?language=en';
+    return this.http.get(url);
   }
 }

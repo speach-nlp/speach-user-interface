@@ -1,22 +1,72 @@
-import { Category } from '../models/category';
-import { Note } from '../models/note';
+import { Message } from '../models/message';
 
 export class Data {
-    static CATEGORIES: Category[] = [{
-        name: 'Category 1',
-        description: 'description about category one'
-    },
-    {
-        name: 'Category 2',
-        description: 'description about category two'
-    },
-    {
-        name: 'Category 3',
-        description: 'description about category three'
-    }];
-    static NOTES: Note[] = [{
-        id: '123',
-        details: 'Note 123 Details',
-        title: 'Note Title'
-    }];
+
+    static messages: Message[] = [
+
+        {
+            id: 'message1',
+            question: 'hi',
+            answer: 'hello, wassap'
+        },
+        {
+            id: 'message2',
+            question: 'what is your name',
+            answer: 'my name is aditya'
+        },
+        {
+            id: 'message3',
+            question: 'what is the full name',
+            answer: 'full name is Aditya gopala lakshmi narayana'
+        },
+        {
+            id: 'message1',
+            question: 'hi',
+            answer: 'hello, wassap'
+        },
+        {
+            id: 'message2',
+            question: 'what is your name',
+            answer: 'my name is aditya'
+        },
+        {
+            id: 'message3',
+            question: 'what is the full name',
+            answer: 'full name is Aditya gopala lakshmi narayana'
+        },
+        {
+            id: 'message1',
+            question: 'hi',
+            answer: 'hello, wassap'
+        },
+        {
+            id: 'message2',
+            question: 'what is your name',
+            answer: 'my name is aditya'
+        },
+        {
+            id: 'message3',
+            question: 'what is the full name',
+            answer: 'full name is Aditya gopala lakshmi narayana'
+        },
+        {
+            id: 'message1',
+            question: 'hi',
+            answer: 'hello, wassap'
+        },
+        {
+            id: 'message2',
+            question: 'what is your name',
+            answer: 'my name is aditya'
+        },
+        {
+            id: 'message3',
+            question: 'what is the full name',
+            answer: 'full name is Aditya gopala lakshmi narayana'
+        }
+    ];
+
+    public static getMessages(): Message[] {
+        return this.messages;
+    }
 }

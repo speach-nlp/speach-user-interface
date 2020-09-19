@@ -1,3 +1,7 @@
+mat-toolbar{
+    background-color: white;
+}
+
 .option-icon{
     cursor: pointer;
 }
@@ -9,3 +13,11 @@
     flex: 1 1 auto;
 }
   
+.cursorPtr{
+    cursor: pointer;
+}
+
+.font-fam{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 25px;
+}

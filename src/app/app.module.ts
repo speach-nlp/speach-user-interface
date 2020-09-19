@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -16,6 +17,9 @@ import { ModelTrainingComponent } from './components/model-training/model-traini
 import { UploadAudioComponent } from './components/upload-audio/upload-audio.component';
 import { LiveStreamAudioComponent } from './components/live-stream-audio/live-stream-audio.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { ResponsiveColsDirective } from './directives/responsive-cols.directive';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -29,14 +33,19 @@ import { FooterComponent } from './components/footer/footer.component';
     ModelTrainingComponent,
     UploadAudioComponent,
     LiveStreamAudioComponent,
-    FooterComponent
+    FooterComponent,
+    NotFoundComponent,
+    ResponsiveColsDirective,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     AngularMaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
