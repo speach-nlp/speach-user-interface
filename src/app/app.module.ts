@@ -20,6 +20,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ResponsiveColsDirective } from './directives/responsive-cols.directive';
 import { LoaderComponent } from './components/loader/loader.component';
+import { SpeechRecognitionComponent } from './components/speech-recognition/speech-recognition.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { LoaderComponent } from './components/loader/loader.component';
     FooterComponent,
     NotFoundComponent,
     ResponsiveColsDirective,
-    LoaderComponent
+    LoaderComponent,
+    SpeechRecognitionComponent
   ],
   imports: [
     BrowserModule,

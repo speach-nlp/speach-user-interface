@@ -5,7 +5,7 @@
             <div *ngFor="let i of messages">
                 <div class="user-message myfont-chat">
                     <div class="user-text-msg">
-                        <span class="machine-txt-bg-color">{{i.question}}</span>
+                        <span class="user-txt-bg-color">{{i.question}}</span>
                     </div>
                 </div>
                 <div class="machine-reply myfont-chat" *ngIf="!i.loading">
@@ -21,14 +21,7 @@
         <input type="text" class="user-text-input myfont-chat" [(ngModel)]="question" (keyup.enter)="submitQuestion()"
             placeholder="ask something..." />
         <div>
-            <button mat-icon-button class="input-voice-icon colorGreen" *ngIf="micOn" (click)="toggleMic()"
-                aria-label="mic icon">
-                <mat-icon>mic</mat-icon>
-            </button>
-            <button mat-icon-button class="input-voice-icon colorRed" *ngIf="!micOn" (click)="toggleMic()"
-                aria-label="mic off icon">
-                <mat-icon>mic_off</mat-icon>
-            </button>
+            <app-speech-recognition (textDetected)=submitRecognisecQuestion($event)></app-speech-recognition>
         </div>
     </div>
 </div>

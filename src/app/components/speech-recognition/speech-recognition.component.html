@@ -1,0 +1,16 @@
+<div>
+    <button mat-icon-button class="input-voice-icon colorRed" *ngIf="voiceActiveSectionDisabled" (click)="toggleMic()"
+        aria-label="mic off icon">
+        <mat-icon>mic_off</mat-icon>
+    </button>
+
+    <button mat-icon-button class="input-voice-icon colorGreen"
+        *ngIf="!voiceActiveSectionDisabled && !voiceActiveSectionListening" (click)="toggleMic()" aria-label="mic icon">
+        <mat-icon>mic</mat-icon>
+    </button>
+
+    <button mat-icon-button class="input-voice-icon" *ngIf="voiceActiveSectionListening" (click)="toggleMic()"
+        aria-label="mic off icon">
+        <mat-icon>more_horiz</mat-icon>
+    </button>
+</div>

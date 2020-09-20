@@ -7,10 +7,11 @@ import { ModelTrainingComponent } from './components/model-training/model-traini
 import { HomeComponent } from './components/home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { LoaderComponent } from './components/loader/loader.component'
+import { SpeechRecognitionComponent } from './components/speech-recognition/speech-recognition.component';
 
 const routes: Routes = [
   {
-    path: '', component: NaturalLanguageProcessingComponent
+    path: '', component: HomeComponent
   },
   {
     path: 'speech-to-text', component: SpeechToTextComponent

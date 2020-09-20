@@ -32,7 +32,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "./node_modules/jquery/dist/jquery.min.js"
+              "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/js/annyang.min.js"
             ],
             "stylePreprocessorOptions": {
               "includePaths": [

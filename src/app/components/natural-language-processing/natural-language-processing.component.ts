@@ -20,7 +20,7 @@ export class NaturalLanguageProcessingComponent implements OnInit {
   @ViewChild('scrollId') private myScrollContainer: ElementRef;
 
   ngOnInit(): void {
-    this.messages = Data.getMessages();
+    this.messages = [];
     setTimeout(() => {
       console.log(this.messages);
       this.loading = false;
@@ -30,6 +30,11 @@ export class NaturalLanguageProcessingComponent implements OnInit {
 
   toggleMic(): void {
     this.micOn = !this.micOn;
+  }
+
+  submitRecognisecQuestion(event: string): void {
+    this.question = event;
+    this.submitQuestion();
   }
 
   submitQuestion(): void {
@@ -55,7 +60,7 @@ export class NaturalLanguageProcessingComponent implements OnInit {
       });
       this.msgLoading = false;
       this.updateScroll();
-    }, 3000);
+    }, 2000);
     this.question = undefined;
   }
 

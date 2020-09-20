@@ -11,18 +11,6 @@
     position: absolute;
 }
 
-.input-voice-icon{
-    margin: 0px 5px;
-    transform: scale(1.5);
-}
-
-.colorGreen{
-    color:green
-}
-
-.colorRed{
-    color: red;
-}
 
 .user-text-input{
     display: inline-block;
@@ -94,7 +82,11 @@
     }
 }
 .user-txt-bg-color{
-    background-color: rgba(245, 238, 179, 1);
+    background-color: rgba(189, 225, 252, 1);
+    margin: 0% 8%;
+    display: inline-block;
+    border-radius: 1%;
+    padding: 1%;
 }
 
 .machine-txt-bg-color{
