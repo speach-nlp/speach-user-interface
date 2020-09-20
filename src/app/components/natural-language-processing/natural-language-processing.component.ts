@@ -21,8 +21,8 @@ export class NaturalLanguageProcessingComponent implements OnInit {
 
   ngOnInit(): void {
     this.messages = Data.getMessages();
-    console.log(this.messages);
     setTimeout(() => {
+      console.log(this.messages);
       this.loading = false;
       this.updateScroll();
     }, 2000);
@@ -33,7 +33,9 @@ export class NaturalLanguageProcessingComponent implements OnInit {
   }
 
   submitQuestion(): void {
-    this.updateScroll();
+    setTimeout(() => {
+      this.updateScroll();
+    }, 100);
     if (this.question === undefined || this.question === '') {
       return;
     }
@@ -53,7 +55,7 @@ export class NaturalLanguageProcessingComponent implements OnInit {
       });
       this.msgLoading = false;
       this.updateScroll();
-    }, 5000);
+    }, 3000);
     this.question = undefined;
   }
 
@@ -62,4 +64,7 @@ export class NaturalLanguageProcessingComponent implements OnInit {
       this.myScrollContainer.nativeElement.scrollTop = this.myScrollContainer.nativeElement.scrollHeight;
     } catch (err) { }
   }
+
+
+
 }
